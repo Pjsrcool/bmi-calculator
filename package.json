@@ -2,8 +2,13 @@
   "name": "bmical",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://GermaVinsmoke.github.io/bmi-calculator",
+  "homepage": "/",
   "dependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/node": "^7.18.5",
+    "@babel/plugin-syntax-jsx": "^7.17.12",
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "@babel/preset-env": "^7.18.2",
     "@types/jest": "24.0.20",
     "chart.js": "2.9.1",
     "materialize-css": "1.0.0",
@@ -23,7 +28,8 @@
     "deploy": "gh-pages -d build",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "es5": "babel src -d src"
   },
   "jest": {
     "collectCoverageFrom": [
